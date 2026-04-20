@@ -34,6 +34,7 @@ Write like a clear person with taste and context, not like a model trying to sou
 - If a claim could apply to any business, rewrite it.
 - Read for rhythm and remove lines that sound rehearsed.
 - Keep punctuation simple. Exclamation marks should be rare.
+- Always use Australian spelling.
 
 ## Rewrite Pass
 
