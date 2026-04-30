@@ -1,66 +1,74 @@
 ---
 name: portfolio-copywriter
-description: Use this skill whenever writing or rewriting customer-facing copy for a marketing website, portfolio site, landing page, agency site, consultancy site, or service business website. Covers hero sections, about pages, service pages, project summaries, case studies, CTAs, headlines, taglines, SEO titles, and meta descriptions. Produces natural, human-sounding copy that feels grounded, specific, and credible, while making meaningful content improvements and preserving strong SEO fundamentals.
+description: Use this skill whenever writing, rewriting, expanding, or critiquing customer-facing copy for a marketing website, portfolio site, landing page, agency site, consultancy site, or service business website. Covers hero sections, about pages, service pages, project summaries, case studies, CTAs, headlines, taglines, SEO titles, meta descriptions, and URL slugs. Also use it for small jobs like shortening a headline, sharpening a tagline, writing a single project blurb, or giving feedback on existing copy. Produces grounded, specific, credible copy that avoids marketing theatre and preserves strong SEO fundamentals. Pairs with the human-copy-style skill for baseline voice.
 ---
 
 # Portfolio Copywriter
 
 Write like an experienced person who knows the work and respects the reader's time. The goal is to build trust, explain value clearly, and let the work do the selling.
 
+Baseline voice and AI-tell avoidance are handled by the human-copy-style skill when available. This skill focuses on what that one does not cover: positioning, structure, proof, SEO, and the specific patterns marketing and portfolio pages need.
+
 ## Defaults
 
 - Sound natural, specific, and confident.
-- Keep the tone grounded. No startup theatre.
-- Use plain language and real details.
+- Keep claims proportional to the evidence.
 - Prefer proof, examples, and concrete nouns over abstractions.
 - Default to restrained marketing copy: capable, warm enough, never gushy.
 - When expanding copy, add signal, not padding.
-- Keep claims proportional to the evidence available.
 - Use Australian spelling when the repo already does.
 
-## What To Avoid
+## Never Invent
 
-- Em dashes, emojis, and polished AI phrasing.
-- Generic hype like "cutting-edge", "innovative", "robust", "seamless", "world-class", or "tailored solutions".
-- Empty agency lines like "we turn ideas into reality" or "your trusted digital partner".
-- Long openings that delay the point.
-- Claims that could belong to any business.
-- Keyword stuffing and obvious SEO filler.
-- Expansion that only repeats the same point in longer form.
+Copywriting is where hallucination does the most damage, because users often cannot tell from a draft what is real. Rules:
+
+- Never invent clients, projects, case studies, sectors served, awards, testimonials, headcount, years in operation, locations, or partnerships.
+- Never invent metrics. "Faster checkout" is better than "43% faster checkout" if you don't know the number.
+- Never attribute quotes to anyone.
+- If a strong line depends on a fact you don't have, either ask the user for it or write a weaker line that is true.
+- If source material is thin, simplify the copy. Do not inflate it.
+
+When you're unsure whether a detail is real, flag it inline like `[check: 15+ years?]` so the user can verify before shipping.
+
+## Three Modes Of Work
+
+Be clear on which mode you're in before drafting.
+
+- **Rewrite**: keep the same information, make it sharper. Don't change what the page claims, just how it says it.
+- **Expand**: the page is too thin. Add real detail, not padding. If you can't add signal, don't expand.
+- **Draft from scratch**: no existing copy. Ask interview questions first. Never fake a voice the brand hasn't established.
 
 ## Working Method
 
-1. Read the existing page or surrounding site copy first.
+1. Read the existing page and surrounding site copy. Voice consistency matters.
 2. Identify the page's job: attract, explain, prove, or convert.
 3. Identify the search intent and likely keyword theme before rewriting.
-4. Pull out the real material: audience, services, sectors, project names, geography, technical strengths, results, constraints, and differentiators.
-5. Draft with a clear hierarchy: headline, support line, proof, CTA.
-6. Tighten for rhythm and cut anything that sounds rehearsed.
-7. Produce SEO assets that match the rewritten page.
-8. If facts are thin, simplify the copy instead of inflating it.
+4. Pull out the real material: audience, services, sectors, project names, geography, technical strengths, results, constraints, differentiators.
+5. If the real material is thin, ask the user before drafting anything heavy.
+6. Draft with a clear hierarchy: headline, support line, proof, CTA.
+7. Tighten for rhythm. Cut anything that sounds rehearsed.
+8. Produce SEO assets that match the rewritten page.
 
 ## Meaningful Expansion
 
-When asked to expand copy, do not just make it longer. Expand by adding:
+When expanding, add:
 
 - clearer positioning
 - stronger proof points
 - better explanation of the service, audience, or use case
-- concrete delivery context, such as sectors, platforms, environments, or constraints
+- concrete delivery context: sectors, platforms, environments, constraints
 - sharper transitions between headline, body copy, and CTA
 
-Good expansion improves depth, clarity, and relevance. If a new sentence does not add information, remove it.
+Expansion that repeats the same point in longer form is a failure mode, not a style. If a new sentence doesn't add information, remove it.
 
 ## SEO Guardrails
 
-- Write for humans first, but keep the primary keyword theme visible in the page.
-- Preserve the page's core topic and intent unless the user asks to reposition it.
+- Write for humans first, but keep the primary keyword theme visible.
+- Preserve the page's topic and intent unless the user asks to reposition it.
 - Put the primary keyword or close variant in the H1, page title, and early body copy when it fits naturally.
 - Use supporting variants in subheads and body copy without forcing exact-match repetition.
-- Keep headings descriptive. They should help both readers and search engines understand the page.
-- Maintain internal consistency between hero copy, page title, meta description, and CTA.
+- Keep headings descriptive. They help readers and search engines alike.
 - Keep metadata specific to the page, not the brand in general.
-- If the site already has strong topical terms, keep them unless there is a clear reason to change them.
 - Never trade readability for density.
 
 ## SEO Outputs
@@ -68,8 +76,8 @@ Good expansion improves depth, clarity, and relevance. If a new sentence does no
 When rewriting or expanding a page, default to providing:
 
 - revised on-page copy
-- SEO title
-- meta description
+- SEO title (aim for 55 to 60 characters)
+- meta description (aim for 150 to 160 characters)
 - suggested H1 if the page needs one
 - suggested supporting headings if the structure is weak
 
@@ -79,24 +87,28 @@ If relevant, also suggest:
 - a cleaner URL slug
 - missing proof points or FAQs that would strengthen topical depth
 
-## Tone For Marketing And Portfolio Sites
-
-- Lead with what the company does and why it matters.
-- Show credibility through work, sectors, delivery context, or named examples.
-- Write like someone who has shipped real projects, not like a brand strategist performing confidence.
-- Let portfolio copy feel observed and factual. A project blurb should sound earned.
-- Keep CTAs low-friction and direct.
-
 ## Page Patterns
 
 ### Hero
 
-- Use one clear positioning line.
-- Add one support sentence with scope, audience, or differentiator.
-- Give the reader one obvious CTA.
-- Make sure the primary topic is obvious without sounding stuffed.
+- One clear positioning line.
+- One support sentence with scope, audience, or differentiator.
+- One obvious CTA.
+- Primary topic obvious without sounding stuffed.
 
-Good hero copy is short enough to scan and strong enough to remember.
+**Example rewrite:**
+
+Before:
+
+> Welcome to Rivercroft Digital, your trusted partner for cutting-edge, tailored solutions that drive real results in today's fast-paced digital landscape.
+
+After:
+
+> Rivercroft builds websites and internal tools for Victorian councils and utilities.
+> Small team, long engagements, code that outlasts us.
+> [Start a project]
+
+The "after" tells you who they serve, what they build, and how they work. The "before" could belong to any agency in any country.
 
 ### About
 
@@ -107,10 +119,19 @@ Good hero copy is short enough to scan and strong enough to remember.
 ### Services
 
 - Start with the outcome or problem solved.
-- Mention the kind of work delivered.
-- Add proof: sectors, systems, environments, platforms, or constraints.
+- Name the kind of work delivered.
+- Add proof: sectors, systems, environments, platforms, constraints.
 - Keep jargon only where it helps credibility.
-- Expand by adding useful detail, not by stacking generic benefits.
+
+**Example rewrite:**
+
+Before:
+
+> We offer robust, end-to-end web development solutions tailored to your business needs.
+
+After:
+
+> We build public-facing websites for regulated sectors: water authorities, councils, health networks. Accessibility, long-term maintenance, and content governance are part of the default scope, not extras.
 
 ### Projects And Portfolio
 
@@ -118,25 +139,27 @@ Good hero copy is short enough to scan and strong enough to remember.
 - Mention who it serves or why it matters.
 - Highlight scale, complexity, or distinctiveness only if true.
 - Avoid writing every project like a press release.
-- Add searchable context such as industry, platform, delivery environment, or type of system when it helps discovery.
+- Add searchable context: industry, platform, delivery environment, system type.
+
+**Example blurb:**
+
+> Rebuilt the booking system for a regional hospital network serving 140,000 patients across six sites. Moved them off a legacy PHP monolith onto a typed Node stack, kept the existing appointment data, and shipped the cutover in a single overnight window.
+
+The reader learns what it is, who it serves, and why it was hard, without adjectives.
 
 ### CTA And Contact
 
 - Keep the ask simple.
 - Avoid fake urgency.
-- Make it easy for a serious buyer to take the next step.
+- Match the CTA to buyer intent.
 
-## Repo Notes
+**Examples:**
 
-In this codebase, marketing and portfolio copy usually lives in:
+Weak: "Take your business to the next level today!"
 
-- `src/app/page.tsx` for homepage hero, about, and section copy.
-- `src/content/services.ts` for service summaries and long-form service descriptions.
-- `src/content/projects.ts` for project blurbs and portfolio summaries.
+Stronger: "Start a project", "Book a 20-minute call", "See pricing", "Get in touch about NSW work".
 
-Read those files before adding new copy so the voice stays consistent across the site.
-
-For SEO-related updates, also check page-level metadata in `src/app/**/page.tsx` so titles and descriptions stay aligned with the rewritten copy.
+The strong versions tell the reader exactly what happens when they click.
 
 ## Rewrite Pass
 
@@ -144,16 +167,33 @@ For SEO-related updates, also check page-level metadata in `src/app/**/page.tsx`
 - Replace vague adjectives with facts.
 - Break up runs of long sentences.
 - Shorten headings until they feel sharp.
-- Check that important keyword themes still appear naturally after editing.
+- Check that keyword themes still appear naturally after editing.
 - Make sure the SEO title and meta description reflect the strongest version of the page.
-- Read the copy out loud once. If it sounds like marketing copy, simplify it again.
+- Read the copy aloud once. If it sounds like marketing copy, simplify it again.
 
 ## Useful Language Bias
 
-Prefer verbs like: build, ship, run, support, modernise, connect, deploy, maintain, design, deliver.
+Verb lists are starting points, not rules. Match them to the industry.
 
-Prefer phrases like: "used in the field", "built for real-world use", "works across", "based in", "designed for", "supports", and "helps".
+- **Software and technical work**: build, ship, run, support, modernise, connect, deploy, maintain, design, deliver.
+- **Design, content, and consultancy**: design, research, advise, document, facilitate, write, structure, plan, review.
+- **Trades and service businesses**: install, fit, service, repair, supply, quote, schedule.
+
+Prefer phrases like: "used in the field", "built for real-world use", "works across", "based in", "designed for", "supports", "helps".
 
 ## If The Brand Has Mission Or Identity Context
 
-Handle it plainly and with respect. Do not turn identity, community, or purpose into decorative copy. State what is true, explain why it matters, and move on.
+Handle it plainly and with respect. Do not turn identity, community, or purpose into decorative copy. State what is true, explain why it matters, move on.
+
+## Locating Copy In The Repo
+
+Before editing, find where the copy actually lives. Marketing and portfolio copy commonly sits in:
+
+- Next.js / React: `src/app/**/page.tsx`, `app/**/page.tsx`, `src/content/*`, `content/*`
+- Astro / MDX: `src/content/*.md(x)`, `src/pages/*.astro`
+- Plain React / Vite: `src/pages/*`, `src/components/*`
+- Eleventy / Hugo / Jekyll: `content/`, `src/site/`, `_posts/`
+
+If you can't find the source file, grep for a distinctive phrase from the live page. For SEO metadata, also check page-level `metadata` exports, `<Head>` components, or frontmatter so titles and descriptions stay aligned with the rewritten body copy.
+
+If the user has set up specific paths in a previous conversation or repo note, prefer those over these defaults.
