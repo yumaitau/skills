@@ -18,6 +18,12 @@ Copywriting guidance for portfolio sites, marketing websites, landing pages, age
 
 Use it for hero sections, about pages, service pages, project summaries, case studies, CTAs, headlines, SEO titles, meta descriptions, and URL slugs.
 
+### `dot-product`
+
+Analyses an existing codebase and produces a `.product/` folder of sales-oriented knowledge files: overview, features, use cases, personas, integrations, differentiators, technical profile, limitations, glossary, and a structured `product-profile.json`.
+
+Use it to bootstrap product knowledge for sales reps, demo builders, and AI sales agents — and as the upstream input to `portfolio-copywriter` and `human-copy-style` for downstream copy work.
+
 ## Repository Structure
 
 ```text
@@ -26,6 +32,11 @@ skills/
     SKILL.md
   portfolio-copywriter/
     SKILL.md
+  dot-product/
+    SKILL.md
+    references/
+      product-profile-schema.md
+      translation-patterns.md
 ```
 
 Each `SKILL.md` contains:
