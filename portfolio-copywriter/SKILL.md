@@ -1,6 +1,6 @@
 ---
 name: portfolio-copywriter
-description: Positioning, structure, proof, and SEO for customer-facing website copy. Use whenever writing, rewriting, expanding, or critiquing copy for a portfolio, marketing, landing, agency, consultancy, or service business site, covering heroes, about pages, service pages, project summaries, case studies, CTAs, headlines, taglines, SEO titles, meta descriptions, and URL slugs. Trigger even for small jobs like shortening a headline or reviewing a single project blurb. Reads `.product/` knowledge files from the dot-product skill when present, and pairs with human-copy-style for baseline voice. Not for standalone emails, blog posts, social posts, or UI microcopy with no page-level SEO job, which human-copy-style alone covers.
+description: Positioning, structure, proof, and SEO for customer-facing website copy. Use whenever writing, rewriting, expanding, or critiquing copy for a portfolio, marketing, landing, agency, consultancy, or service business site, covering heroes, about pages, service pages, project summaries, case studies, CTAs, headlines, taglines, SEO titles, meta descriptions, and URL slugs. Trigger even for small jobs like shortening a headline or reviewing a single project blurb. Reads `.product/` knowledge files from the dot-product skill when present, and pairs with human-copy-style for baseline voice. Not for marketing emails, newsletters, announcements, social posts, or ad copy, which campaign-copywriter owns, and not for blog posts or UI microcopy with no page-level SEO job, which human-copy-style alone covers.
 ---
 
 # Portfolio Copywriter
@@ -198,6 +198,8 @@ If the user has set up specific paths in a previous conversation or repo note, p
 
 ## When NOT To Use
 
-- Standalone emails, blog posts, social posts, UI microcopy, or announcements with no page-level SEO job: `human-copy-style` alone covers those.
+- Marketing emails, newsletters, announcements, social posts, and ad copy: `campaign-copywriter` owns structure and CTAs there, with `human-copy-style` on voice.
+- Blog posts and UI microcopy with no page-level SEO job: `human-copy-style` alone covers those.
+- Campaign planning, audience selection, or channel plans: that is `marketing-strategist`.
 - Extracting product knowledge from a codebase: that is `dot-product`. Run it first, then come back here for the copy.
 - Documentation written for developers (READMEs, API docs, changelogs): not marketing copy.

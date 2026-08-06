@@ -1,13 +1,13 @@
 ---
 name: human-copy-style
-description: Use this skill whenever writing or editing any customer-facing copy, including marketing text, UI microcopy, emails, landing pages, product descriptions, taglines, blog posts, social posts, or announcements that should sound like a person wrote them. Trigger this even for short asks like "rewrite this hero section," "tighten this," or "punch this up," and for any task where the output will be read by customers or prospects. Enforces plainspoken language, varied sentence rhythm, Australian spelling, and removal of common AI tells (em dashes, emojis, filler transitions, generic hype, triple-adjective chains, rule-of-three slogans, and hedged verbs). For website page copy it pairs with portfolio-copywriter, which owns positioning, structure, proof, and SEO while this skill owns voice. Not for developer documentation, code comments, or legal wording.
+description: Use this skill whenever writing or editing any customer-facing copy, including marketing text, UI microcopy, emails, landing pages, product descriptions, taglines, blog posts, social posts, or announcements that should sound like a person wrote them. Trigger this even for short asks like "rewrite this product description," "tighten this," or "punch this up," and for any task where the output will be read by customers or prospects. Enforces plainspoken language, varied sentence rhythm, Australian spelling, and removal of common AI tells (em dashes, emojis, filler transitions, generic hype, triple-adjective chains, rule-of-three slogans, and hedged verbs). For website page copy it pairs with portfolio-copywriter, and for campaign pieces like emails, announcements, social posts, and ads with campaign-copywriter; those skills own positioning, structure, proof, and SEO while this skill owns voice. Not for developer documentation, code comments, or legal wording.
 ---
 
 # Human Copy Style
 
 Write like a person with taste and context, not a model trying to sound helpful.
 
-This skill owns voice: word choice, rhythm, and the removal of AI tells. For portfolio, marketing, and service business websites, `portfolio-copywriter` owns positioning, structure, proof, and SEO; both skills apply to those pages. `dot-product` supplies code-grounded product facts when a `.product/` folder exists — prefer its facts over inventing detail.
+This skill owns voice: word choice, rhythm, and the removal of AI tells. For portfolio, marketing, and service business websites, `portfolio-copywriter` owns positioning, structure, proof, and SEO; both skills apply to those pages. For marketing emails, announcements, social posts, and ads, `campaign-copywriter` owns structure, offers, and CTAs; both skills apply to those pieces too. `marketing-strategist` owns the planning upstream of any copy. `dot-product` supplies code-grounded product facts when a `.product/` folder exists — prefer its facts over inventing detail.
 
 ## Goals
 
@@ -98,3 +98,4 @@ Rewritten:
 - Legal, compliance, or policy text where exact wording is mandated. Flag clunky phrasing, don't rewrite it.
 - Quotes and testimonials from real people. Their words stay verbatim.
 - Positioning, page structure, proof selection, or SEO metadata for a website: that judgement belongs to `portfolio-copywriter`. This skill still governs the voice of the resulting copy.
+- Campaign structure, offers, and CTAs for emails, announcements, social posts, or ads: that judgement belongs to `campaign-copywriter`. This skill still governs the voice there too.

@@ -16,7 +16,7 @@ Use it whenever writing or editing prose for an Australian audience or team. The
 
 Baseline copy style for customer-facing writing. It keeps copy plainspoken, specific, and human, with Australian spelling and guardrails against common AI tells such as generic hype, filler transitions, emojis, em dashes, and over-polished phrasing.
 
-Use it for marketing copy, UI microcopy, emails, landing pages, product descriptions, taglines, blog posts, social posts, and announcements. For website page copy it pairs with `portfolio-copywriter`, which owns positioning, structure, and SEO while this skill owns voice. Not for developer documentation or legal wording.
+Use it for marketing copy, UI microcopy, emails, landing pages, product descriptions, taglines, blog posts, social posts, and announcements. For website page copy it pairs with `portfolio-copywriter`, and for campaign pieces with `campaign-copywriter`; those skills own structure while this one owns voice. Not for developer documentation or legal wording.
 
 ### `portfolio-copywriter`
 
@@ -24,11 +24,23 @@ Copywriting guidance for portfolio sites, marketing websites, landing pages, age
 
 Use it for hero sections, about pages, service pages, project summaries, case studies, CTAs, headlines, SEO titles, meta descriptions, and URL slugs.
 
+### `campaign-copywriter`
+
+Structure, offers, CTAs, and channel patterns for standalone marketing pieces: marketing emails, newsletters, launch and release announcements, social posts, and ad copy, including subject lines, preview text, and email sequences. Reads `.product/` knowledge files from `dot-product`, consumes campaign briefs from `marketing-strategist`, and pairs with `human-copy-style` for voice.
+
+Use it for anything sent or posted to an audience. Website pages stay with `portfolio-copywriter`.
+
+### `marketing-strategist`
+
+Campaign planning and messaging strategy before any copy is written: campaign briefs, messaging frameworks, audience and channel selection, launch plans, and content calendars sized to the team's real capacity. Reads `.product/` knowledge files from `dot-product` and never invents market data or benchmarks.
+
+Use it to decide the goal, audience, message, and channels, then hand the resulting brief to `campaign-copywriter` or `portfolio-copywriter` for the writing.
+
 ### `dot-product`
 
 Analyses an existing codebase and produces a `.product/` folder of sales-oriented knowledge files: overview, features, use cases, personas, integrations, differentiators, technical profile, limitations, glossary, and a structured `product-profile.json`.
 
-Use it to bootstrap product knowledge for sales reps, demo builders, and AI sales agents — and as the upstream input to `portfolio-copywriter` and `human-copy-style` for downstream copy work.
+Use it to bootstrap product knowledge for sales reps, demo builders, and AI sales agents — and as the upstream input to `portfolio-copywriter`, `campaign-copywriter`, `marketing-strategist`, and `human-copy-style` for downstream copy and planning work.
 
 ### `laravel-gate-audit`
 
@@ -45,6 +57,10 @@ skills/
   human-copy-style/
     SKILL.md
   portfolio-copywriter/
+    SKILL.md
+  campaign-copywriter/
+    SKILL.md
+  marketing-strategist/
     SKILL.md
   dot-product/
     SKILL.md

@@ -1,13 +1,13 @@
 ---
 name: australian-english
-description: Enforces Australian English in all prose output, including documentation, READMEs, changelogs, UI text, error messages, emails, reports, code comments, and commit messages. Use whenever writing or editing prose in a project that targets an Australian audience or team, whenever the user asks for Australian English, AU spelling, or -ise endings, or complains about American spellings, and even when nobody mentions spelling at all, since agents default to US English. Covers the tricky noun/verb pairs (licence/license, practice/practise, program/programme), the -ise, -our, and -re families, and the hard boundary that code identifiers, API names, package names, and conventional filenames like LICENSE always keep their original spelling. Not for projects with a documented US or British English convention, and never for respelling quoted text or code.
+description: Enforces Australian English in all prose output, including documentation, READMEs, changelogs, UI text, error messages, emails, reports, code comments, and commit messages. Use whenever writing or editing prose in a project that targets an Australian audience or team, whenever the user asks for Australian English, AU spelling, or -ise endings, or complains about American spellings, and even when nobody mentions spelling at all, since agents default to US English. Covers the tricky noun/verb pairs (licence/license, practice/practise, program/programme), the -ise, -our, and -re families, and the hard boundary that code identifiers, API names, package names, and conventional filenames like LICENSE always keep their original spelling. The copy skills already mandate Australian spelling for customer-facing copy and defer here for the detail; this skill is primary for developer-facing prose. Not for projects with a documented US or British English convention, and never for respelling quoted text or code.
 ---
 
 # Australian English
 
 Australian English is the default for every sentence of prose you write. American spelling in prose is a bug; American spelling in code is correct and untouchable.
 
-In this pack, `human-copy-style` and `portfolio-copywriter` already require Australian spelling for customer-facing copy. This skill defines the detail and extends the default to everything else, including the developer-facing writing those skills exclude.
+In this pack, `human-copy-style`, `portfolio-copywriter`, and `campaign-copywriter` already require Australian spelling for customer-facing copy. This skill defines the detail and extends the default to everything else, including the developer-facing writing those skills exclude.
 
 ## The Boundary
 
