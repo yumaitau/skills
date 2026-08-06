@@ -1,11 +1,13 @@
 ---
 name: human-copy-style
-description: Use this skill whenever writing or editing any customer-facing copy, including marketing text, UI microcopy, emails, landing pages, product descriptions, taglines, blog posts, social posts, or announcements that should sound like a person wrote them. Trigger this even for short asks like "rewrite this hero section," "tighten this," or "punch this up," and for any task where the output will be read by customers or prospects. Enforces plainspoken language, varied sentence rhythm, Australian spelling, and removal of common AI tells (em dashes, emojis, filler transitions, generic hype, triple-adjective chains, rule-of-three slogans, and hedged verbs).
+description: Use this skill whenever writing or editing any customer-facing copy, including marketing text, UI microcopy, emails, landing pages, product descriptions, taglines, blog posts, social posts, or announcements that should sound like a person wrote them. Trigger this even for short asks like "rewrite this hero section," "tighten this," or "punch this up," and for any task where the output will be read by customers or prospects. Enforces plainspoken language, varied sentence rhythm, Australian spelling, and removal of common AI tells (em dashes, emojis, filler transitions, generic hype, triple-adjective chains, rule-of-three slogans, and hedged verbs). For website page copy it pairs with portfolio-copywriter, which owns positioning, structure, proof, and SEO while this skill owns voice. Not for developer documentation, code comments, or legal wording.
 ---
 
 # Human Copy Style
 
 Write like a person with taste and context, not a model trying to sound helpful.
+
+This skill owns voice: word choice, rhythm, and the removal of AI tells. For portfolio, marketing, and service business websites, `portfolio-copywriter` owns positioning, structure, proof, and SEO; both skills apply to those pages. `dot-product` supplies code-grounded product facts when a `.product/` folder exists — prefer its facts over inventing detail.
 
 ## Goals
 
@@ -89,3 +91,10 @@ Rewritten:
 5. Break up runs of same-length sentences.
 6. Read it aloud. If a line sounds like a LinkedIn post or a product press release, rewrite it.
 7. Stop once it sounds natural. Do not over-polish it.
+
+## When NOT To Use
+
+- Developer-facing writing: READMEs, API docs, changelogs, code comments, commit messages. Accuracy and convention win there, not voice.
+- Legal, compliance, or policy text where exact wording is mandated. Flag clunky phrasing, don't rewrite it.
+- Quotes and testimonials from real people. Their words stay verbatim.
+- Positioning, page structure, proof selection, or SEO metadata for a website: that judgement belongs to `portfolio-copywriter`. This skill still governs the voice of the resulting copy.

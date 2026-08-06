@@ -10,11 +10,11 @@ This repository contains focused instructions that help our AI coding assistants
 
 Baseline copy style for customer-facing writing. It keeps copy plainspoken, specific, and human, with Australian spelling and guardrails against common AI tells such as generic hype, filler transitions, emojis, em dashes, and over-polished phrasing.
 
-Use it for marketing copy, UI microcopy, emails, landing pages, product descriptions, taglines, blog posts, social posts, and announcements.
+Use it for marketing copy, UI microcopy, emails, landing pages, product descriptions, taglines, blog posts, social posts, and announcements. For website page copy it pairs with `portfolio-copywriter`, which owns positioning, structure, and SEO while this skill owns voice. Not for developer documentation or legal wording.
 
 ### `portfolio-copywriter`
 
-Copywriting guidance for portfolio sites, marketing websites, landing pages, agency sites, consultancy sites, and service business websites. It focuses on positioning, proof, structure, SEO fundamentals, and credible page-level copy.
+Copywriting guidance for portfolio sites, marketing websites, landing pages, agency sites, consultancy sites, and service business websites. It focuses on positioning, proof, structure, SEO fundamentals, and credible page-level copy, and reads `.product/` knowledge files from `dot-product` when they exist.
 
 Use it for hero sections, about pages, service pages, project summaries, case studies, CTAs, headlines, SEO titles, meta descriptions, and URL slugs.
 
@@ -23,6 +23,12 @@ Use it for hero sections, about pages, service pages, project summaries, case st
 Analyses an existing codebase and produces a `.product/` folder of sales-oriented knowledge files: overview, features, use cases, personas, integrations, differentiators, technical profile, limitations, glossary, and a structured `product-profile.json`.
 
 Use it to bootstrap product knowledge for sales reps, demo builders, and AI sales agents — and as the upstream input to `portfolio-copywriter` and `human-copy-style` for downstream copy work.
+
+### `laravel-gate-audit`
+
+Audits Laravel applications for gate and policy usage, then compares referenced abilities against `Gate::define`, `Gate::resource`, policy mappings, policy methods, and authorization hooks.
+
+Use it to find missing gate definitions, undefined policy methods, ability typos, suspicious model/ability mismatches, and dynamic authorization checks that need manual confirmation.
 
 ## Repository Structure
 
@@ -37,6 +43,8 @@ skills/
     references/
       product-profile-schema.md
       translation-patterns.md
+  laravel-gate-audit/
+    SKILL.md
 ```
 
 Each `SKILL.md` contains:

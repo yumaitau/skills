@@ -1,22 +1,23 @@
 ---
 name: portfolio-copywriter
-description: Use this skill whenever writing, rewriting, expanding, or critiquing customer-facing copy for a marketing website, portfolio site, landing page, agency site, consultancy site, or service business website. Covers hero sections, about pages, service pages, project summaries, case studies, CTAs, headlines, taglines, SEO titles, meta descriptions, and URL slugs. Also use it for small jobs like shortening a headline, sharpening a tagline, writing a single project blurb, or giving feedback on existing copy. Produces grounded, specific, credible copy that avoids marketing theatre and preserves strong SEO fundamentals. Pairs with the human-copy-style skill for baseline voice.
+description: Positioning, structure, proof, and SEO for customer-facing website copy. Use whenever writing, rewriting, expanding, or critiquing copy for a portfolio, marketing, landing, agency, consultancy, or service business site, covering heroes, about pages, service pages, project summaries, case studies, CTAs, headlines, taglines, SEO titles, meta descriptions, and URL slugs. Trigger even for small jobs like shortening a headline or reviewing a single project blurb. Reads `.product/` knowledge files from the dot-product skill when present, and pairs with human-copy-style for baseline voice. Not for standalone emails, blog posts, social posts, or UI microcopy with no page-level SEO job, which human-copy-style alone covers.
 ---
 
 # Portfolio Copywriter
 
-Write like an experienced person who knows the work and respects the reader's time. The goal is to build trust, explain value clearly, and let the work do the selling.
+Write like an experienced person who knows the work and respects the reader's time. Build trust, explain value clearly, and let the work do the selling. Default to restrained marketing copy: capable, warm enough, never gushy.
 
-Baseline voice and AI-tell avoidance are handled by the human-copy-style skill when available. This skill focuses on what that one does not cover: positioning, structure, proof, SEO, and the specific patterns marketing and portfolio pages need.
+This skill owns positioning, structure, proof, SEO, and page-level patterns. Baseline voice and AI-tell avoidance belong to the `human-copy-style` skill. If that skill is not installed, hold its core line yourself: plain verbs over buzzwords, no em dashes or emojis, no generic hype, varied sentence rhythm, Australian spelling.
 
-## Defaults
+## Source Material
 
-- Sound natural, specific, and confident.
-- Keep claims proportional to the evidence.
-- Prefer proof, examples, and concrete nouns over abstractions.
-- Default to restrained marketing copy: capable, warm enough, never gushy.
-- When expanding copy, add signal, not padding.
-- Use Australian spelling when the repo already does.
+Real material beats invention, so gather it before drafting:
+
+1. If `.product/` exists at the repository root (output of the `dot-product` skill), read `OVERVIEW.md`, `FEATURES.md`, `DIFFERENTIATORS.md`, and `USE_CASES.md` first. It is pre-mined, code-grounded proof material, which is exactly what this skill needs. `product-profile.json` holds the same facts structured. If the copy job is large and `.product/` is missing, suggest running `dot-product` first.
+2. Read the existing page and the surrounding site copy. Voice consistency matters, and pages already make claims you must not contradict.
+3. Ask the user for anything load-bearing that neither source provides.
+
+You are done gathering when every claim you plan to make traces to a source or to a question you have asked.
 
 ## Never Invent
 
@@ -36,18 +37,16 @@ Be clear on which mode you're in before drafting.
 
 - **Rewrite**: keep the same information, make it sharper. Don't change what the page claims, just how it says it.
 - **Expand**: the page is too thin. Add real detail, not padding. If you can't add signal, don't expand.
-- **Draft from scratch**: no existing copy. Ask interview questions first. Never fake a voice the brand hasn't established.
+- **Draft from scratch**: no existing copy. Interview the user before drafting. Minimum set: who the site serves and the one action a visitor should take; the services or products offered, and which they want more of; provable facts (sectors, locations, years in operation, team size, results, clients they can name publicly); what makes them different from the next search result; geographic scope and any known keyword targets. Never fake a voice the brand hasn't established.
 
 ## Working Method
 
-1. Read the existing page and surrounding site copy. Voice consistency matters.
-2. Identify the page's job: attract, explain, prove, or convert.
-3. Identify the search intent and likely keyword theme before rewriting.
-4. Pull out the real material: audience, services, sectors, project names, geography, technical strengths, results, constraints, differentiators.
-5. If the real material is thin, ask the user before drafting anything heavy.
-6. Draft with a clear hierarchy: headline, support line, proof, CTA.
-7. Tighten for rhythm. Cut anything that sounds rehearsed.
-8. Produce SEO assets that match the rewritten page.
+1. Establish the mode: rewrite, expand, or draft from scratch.
+2. Gather source material as above.
+3. Identify the page's job (attract, explain, prove, or convert) and its search intent and keyword theme.
+4. Draft with a clear hierarchy: headline, support line, proof, CTA.
+5. Run the rewrite pass below.
+6. Produce the SEO outputs below. Done when the SEO title, meta description, and H1 all reflect the final copy, not the draft.
 
 ## Meaningful Expansion
 
@@ -65,9 +64,8 @@ Expansion that repeats the same point in longer form is a failure mode, not a st
 
 - Write for humans first, but keep the primary keyword theme visible.
 - Preserve the page's topic and intent unless the user asks to reposition it.
-- Put the primary keyword or close variant in the H1, page title, and early body copy when it fits naturally.
+- Put the primary keyword or a close variant in the H1, page title, and early body copy when it fits naturally.
 - Use supporting variants in subheads and body copy without forcing exact-match repetition.
-- Keep headings descriptive. They help readers and search engines alike.
 - Keep metadata specific to the page, not the brand in general.
 - Never trade readability for density.
 
@@ -163,13 +161,13 @@ The strong versions tell the reader exactly what happens when they click.
 
 ## Rewrite Pass
 
-- Cut filler and slogans.
-- Replace vague adjectives with facts.
-- Break up runs of long sentences.
+Voice-level editing (filler, buzzwords, rhythm) is `human-copy-style`'s rewrite pass. This one is about proof and search:
+
+- Replace vague adjectives with facts from the source material.
 - Shorten headings until they feel sharp.
-- Check that keyword themes still appear naturally after editing.
+- Check the keyword theme survived the edit. Restore it naturally if it didn't.
 - Make sure the SEO title and meta description reflect the strongest version of the page.
-- Read the copy aloud once. If it sounds like marketing copy, simplify it again.
+- Read the copy aloud once. If it still sounds like marketing copy, simplify it again.
 
 ## Useful Language Bias
 
@@ -179,7 +177,7 @@ Verb lists are starting points, not rules. Match them to the industry.
 - **Design, content, and consultancy**: design, research, advise, document, facilitate, write, structure, plan, review.
 - **Trades and service businesses**: install, fit, service, repair, supply, quote, schedule.
 
-Prefer phrases like: "used in the field", "built for real-world use", "works across", "based in", "designed for", "supports", "helps".
+Prefer phrases like: "used in the field", "works across", "based in", "supports".
 
 ## If The Brand Has Mission Or Identity Context
 
@@ -194,6 +192,12 @@ Before editing, find where the copy actually lives. Marketing and portfolio copy
 - Plain React / Vite: `src/pages/*`, `src/components/*`
 - Eleventy / Hugo / Jekyll: `content/`, `src/site/`, `_posts/`
 
-If you can't find the source file, grep for a distinctive phrase from the live page. For SEO metadata, also check page-level `metadata` exports, `<Head>` components, or frontmatter so titles and descriptions stay aligned with the rewritten body copy.
+If you can't find the source file, grep for a distinctive phrase from the live page. For SEO metadata, also check page-level `metadata` exports, `Head` components, or frontmatter so titles and descriptions stay aligned with the rewritten body copy.
 
 If the user has set up specific paths in a previous conversation or repo note, prefer those over these defaults.
+
+## When NOT To Use
+
+- Standalone emails, blog posts, social posts, UI microcopy, or announcements with no page-level SEO job: `human-copy-style` alone covers those.
+- Extracting product knowledge from a codebase: that is `dot-product`. Run it first, then come back here for the copy.
+- Documentation written for developers (READMEs, API docs, changelogs): not marketing copy.

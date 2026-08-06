@@ -71,18 +71,16 @@ For each feature, capture:
 
 ### Phase 3 — Translate technical to customer language
 
-This is the step where sales material usually goes wrong. The translation rules below are the spine of the skill.
+This is the step where sales material usually goes wrong. The pattern:
 
 | Technical signal | Customer-facing framing |
 |---|---|
 | `POST /api/exports` route | "Export your data" capability |
 | `BullMQ` job processing nightly aggregations | "Automated daily reporting" |
-| `OAuth2` against Google, Microsoft | "Single sign-on with your existing identity provider" |
 | `Stripe` SDK + webhook handlers | "Subscription billing and invoicing" |
-| `RBAC` middleware with `admin`, `member`, `viewer` roles | "Role-based access control with three permission tiers" |
 | Multi-tenant schema (`organisation_id` on every table) | "Built for teams — isolated workspaces per organisation" |
-| WebSocket / SSE channel | "Live updates without page refresh" |
-| S3 with presigned URLs | "Secure file uploads and downloads" |
+
+Consult `references/translation-patterns.md` for the full lookup by category (auth, billing, data, comms, storage, scale, security, multi-tenancy), including the list of infrastructure signals NOT worth surfacing.
 
 Three rules for translation:
 
@@ -137,7 +135,7 @@ Treat it as prior work. Read it first. Update files in place rather than overwri
 Ask the user which product to analyse, or analyse one per top-level package and write `.product/<package-name>/...` for each.
 
 ### README contradicts the code
-Trust the code. Note the contradiction in `LIMITATIONS.md` or `OPEN_QUESTIONS` so the team can resolve it.
+Trust the code. Note the contradiction in `LIMITATIONS.md` or the `## Open Questions` section of `OVERVIEW.md` so the team can resolve it.
 
 ### Heavy use of feature flags
 Treat flagged-off features as "in development" unless the flag is on by default in production config. Don't list dark-launched experiments as shipped features.
