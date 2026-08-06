@@ -6,6 +6,12 @@ This repository contains focused instructions that help our AI coding assistants
 
 ## Skills
 
+### `australian-english`
+
+Enforces Australian English in all prose output: documentation, READMEs, changelogs, UI text, emails, reports, code comments, and commit messages. Defines the tricky noun/verb pairs (licence/license, practice/practise, program/programme) and the hard boundary that code identifiers, API names, package names, and conventional filenames like `LICENSE` always keep their original spelling.
+
+Use it whenever writing or editing prose for an Australian audience or team. The copy skills below already require Australian spelling for customer-facing copy; this skill defines the detail and extends the default to everything else, including developer-facing writing.
+
 ### `human-copy-style`
 
 Baseline copy style for customer-facing writing. It keeps copy plainspoken, specific, and human, with Australian spelling and guardrails against common AI tells such as generic hype, filler transitions, emojis, em dashes, and over-polished phrasing.
@@ -34,6 +40,8 @@ Use it to find missing gate definitions, undefined policy methods, ability typos
 
 ```text
 skills/
+  australian-english/
+    SKILL.md
   human-copy-style/
     SKILL.md
   portfolio-copywriter/
