@@ -108,6 +108,16 @@ Use it to bootstrap product knowledge for sales reps, demo builders, and AI sale
 npx skills add yumaitau/skills@dot-product
 ```
 
+### `yuma-it-context`
+
+The company record for Yuma IT itself: legal and procurement facts, the seven service lines, audience-specific proof points, and the rules governing which past work Yuma may claim as its own rather than as founder work. Embeds the facts that rarely change and points at the site's markdown endpoints for the project and repository lists that do.
+
+Use it when writing or editing anything about Yuma IT, including website pages, capability statements, tender and grant responses, proposals, bios, and supplier forms. It supplies the facts; `human-copy-style`, `portfolio-copywriter`, and `campaign-copywriter` do the writing. Not for writing about a client's product, which is `dot-product`.
+
+```bash
+npx skills add yumaitau/skills@yuma-it-context
+```
+
 ### `laravel-gate-audit`
 
 Audits Laravel applications for gate and policy usage, then compares referenced abilities against `Gate::define`, `Gate::resource`, policy mappings, policy methods, and authorization hooks.
@@ -137,6 +147,8 @@ skills/
     references/
       product-profile-schema.md
       translation-patterns.md
+  yuma-it-context/
+    SKILL.md
   laravel-gate-audit/
     SKILL.md
 ```
