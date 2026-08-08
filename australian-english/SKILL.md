@@ -5,7 +5,7 @@ description: Enforces Australian English in all prose output, including document
 
 # Australian English
 
-Australian English is the default for every sentence of prose you write. American spelling in prose is a bug; American spelling in code is correct and untouchable.
+Australian English is the default for every sentence of prose you write. American spelling in prose is a bug; American spelling in code identifiers is correct and untouchable. Code comments and prose strings follow the Australian English rule.
 
 In this pack, every other skill relies on Australian English for its prose and defers here for the detail:
 
