@@ -52,7 +52,7 @@ Project installs land in `.agents/skills/` and are symlinked into each agent's o
 
 Enforces Australian English in all prose output: documentation, READMEs, changelogs, UI text, emails, reports, code comments, and commit messages. Defines the tricky noun/verb pairs (licence/license, practice/practise, program/programme) and the hard boundary that code identifiers, API names, package names, and conventional filenames like `LICENSE` always keep their original spelling.
 
-Use it whenever writing or editing prose for an Australian audience or team. The copy skills below already require Australian spelling for customer-facing copy; this skill defines the detail and extends the default to everything else, including developer-facing writing.
+Use it whenever writing or editing prose for an Australian audience or team. Every skill in this pack requires Australian English and defers here for spelling detail; this skill is also primary for developer-facing writing the copy skills exclude.
 
 ```bash
 npx skills add yumaitau/skills@australian-english
@@ -173,7 +173,8 @@ description: Use this skill when...
 ```
 
 4. Write the skill instructions with concrete rules and examples.
-5. Keep the description specific. Assistants use it to decide when the skill should load.
+5. Require Australian English for any prose the skill produces, and point at `australian-english` for spelling detail.
+6. Keep the description specific. Assistants use it to decide when the skill should load.
 
 ## Notes
 
@@ -182,3 +183,4 @@ description: Use this skill when...
 - There are no runtime dependencies.
 - Skills should stay focused on one repeatable workflow or area of judgement.
 - Prefer specific guidance over broad style advice.
+- All skills require Australian English for prose and reference `australian-english` for spelling detail (identifiers and conventional filenames keep their original spelling).

@@ -7,6 +7,8 @@ description: Use this skill when auditing a Laravel application for authorizatio
 
 Audit Laravel authorization usage by comparing every referenced ability with the places Laravel can define or resolve that ability. The goal is to find missing definitions, typo-level mismatches, stale checks, and checks that rely on implicit policies without enough evidence.
 
+Write the audit report in Australian English. Defer spelling detail to the `australian-english` skill; leave code identifiers, ability strings, class names, and file paths spelled exactly as they appear in the codebase.
+
 ## Audit Scope
 
 Inspect gate and policy ability usage in:

@@ -97,7 +97,7 @@ Write all markdown files first, then generate `product-profile.json` last so it 
 Markdown style:
 
 - Plain English. No marketing theatre, no hype adjectives ("powerful", "seamless", "robust", "best-in-class").
-- Australian spelling.
+- Australian English throughout. Defer spelling detail (licence/license, -ise/-our/-re, prose vs symbol boundary) to the `australian-english` skill.
 - Short sentences. Bullets where they help, prose where bullets feel staccato.
 - Include code references (file or route) for any non-obvious claim, formatted like `src/routes/billing.ts:42`. This lets a curious reader verify.
 - Avoid emojis, em dashes, and filler transitions ("Furthermore,", "In conclusion,").
