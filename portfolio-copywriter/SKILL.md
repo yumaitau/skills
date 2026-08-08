@@ -7,7 +7,7 @@ description: Positioning, structure, proof, and SEO for customer-facing website 
 
 Write like an experienced person who knows the work and respects the reader's time. Build trust, explain value clearly, and let the work do the selling. Default to restrained marketing copy: capable, warm enough, never gushy.
 
-This skill owns positioning, structure, proof, SEO, and page-level patterns. Baseline voice and AI-tell avoidance belong to the `human-copy-style` skill. If that skill is not installed, hold its core line yourself: plain verbs over buzzwords, no em dashes or emojis, no generic hype, varied sentence rhythm, Australian spelling.
+This skill owns positioning, structure, proof, SEO, and page-level patterns. Baseline voice and AI-tell avoidance belong to the `human-copy-style` skill. If that skill is not installed, hold its core line yourself: plain verbs over buzzwords, no em dashes or emojis, no generic hype, varied sentence rhythm. Use Australian English throughout; defer spelling detail to the `australian-english` skill.
 
 ## Source Material
 

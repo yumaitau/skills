@@ -7,7 +7,7 @@ description: Structure, offers, CTAs, and channel patterns for standalone market
 
 Every piece has one message, one audience, and one action. If you can't name all three before drafting, you're not ready to draft. Campaign copy interrupts someone's inbox or feed, so earn the interruption: say something true and useful, then get out.
 
-This skill owns structure, offers, CTAs, and channel patterns for standalone marketing pieces. Baseline voice and AI-tell avoidance belong to the `human-copy-style` skill. If that skill is not installed, hold its core line yourself: plain verbs over buzzwords, no em dashes or emojis, no generic hype, varied sentence rhythm, Australian spelling.
+This skill owns structure, offers, CTAs, and channel patterns for standalone marketing pieces. Baseline voice and AI-tell avoidance belong to the `human-copy-style` skill. If that skill is not installed, hold its core line yourself: plain verbs over buzzwords, no em dashes or emojis, no generic hype, varied sentence rhythm. Use Australian English throughout; defer spelling detail to the `australian-english` skill.
 
 ## Source Material
 

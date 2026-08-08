@@ -54,7 +54,7 @@ This skill owns voice: word choice, rhythm, and the removal of AI tells. For por
 - Prose often beats a bulleted list in marketing copy. Only use bullets when the content is genuinely a list.
 - Read for rhythm and remove lines that sound rehearsed.
 - Keep punctuation simple.
-- Use Australian spelling.
+- Use Australian English throughout. Defer spelling detail (licence/license, -ise/-our/-re, prose vs symbol boundary) to the `australian-english` skill.
 
 ## Before and After
 

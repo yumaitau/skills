@@ -116,7 +116,7 @@ When an enquiry needs one of these, say what is known and route the rest to hell
 
 `human-copy-style` governs voice in full. Two things specific to writing as Yuma IT:
 
-Australian English throughout, including organisation, recognise, licence as a noun, and specialise. See the `australian-english` skill.
+Australian English throughout, including organisation, recognise, licence as a noun, and specialise. Defer spelling detail to the `australian-english` skill.
 
 The company writes plainly about hard work and refuses inflation. "Practical work that reduces real exposure, not security theatre" and "AI work that is grounded in messy real-world data, not polished demo datasets" are the register. Match that: concrete, slightly blunt, no hype.
 

@@ -7,7 +7,7 @@ description: Campaign planning and messaging strategy before any copy is written
 
 Strategy is choosing what not to do. A plan that lists every channel and every audience is a wish, not a strategy. Produce plans a real team can execute: grounded in facts the business actually has, sized to the hours actually available, aimed at one measurable outcome.
 
-This skill owns the decisions upstream of copy: goal, audience, message, channels, timing. The writing itself belongs to `campaign-copywriter` (emails, announcements, social, ads) and `portfolio-copywriter` (website pages), with `human-copy-style` governing voice throughout.
+This skill owns the decisions upstream of copy: goal, audience, message, channels, timing. The writing itself belongs to `campaign-copywriter` (emails, announcements, social, ads) and `portfolio-copywriter` (website pages), with `human-copy-style` governing voice throughout. Use Australian English for every brief, framework, and plan; defer spelling detail to the `australian-english` skill.
 
 ## Source Material
 
